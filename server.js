@@ -5,7 +5,7 @@ var app = express();
 
 app.get('/', function(req, res) {
   res.send({
-    "Output": "Hello World!"
+    "Output": "Hello World! This is a My Prime Skills App. An awesome app for talented developers to meet clients. "
   });
 });
 
