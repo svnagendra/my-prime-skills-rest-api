@@ -4,7 +4,7 @@ var express = require('express');
 var app = express();
 
 //Refer all required folders & references
-api = require('./services/api'),
+var defaultapi = require('./services/api');
 
 //Default methods provided by skelton
 app.get('/', function(req, res) {
@@ -20,7 +20,7 @@ app.post('/', function(req, res) {
 });
 
 //Custom application methods
-app.get('/api/name', api.name);
+app.get('/api/name', defaultapi.name);
 
 app.listen(port);
 module.exports = app;
